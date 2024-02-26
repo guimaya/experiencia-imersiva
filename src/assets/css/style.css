@@ -1,0 +1,106 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #151515;
+}
+
+video.video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.slide.active,
+.button.active,
+.video.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  z-index: 9999;
+  width: 49.9%;
+  height: 100vh;
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+a[href="iniciar"] {
+  width: 100%;
+}
+
+a[href="relaxar"],
+a[href="socializar"],
+a[href="confraternizar"],
+a[href="comcerteza"]{
+  right: 0;
+  left: auto;
+
+}
+
+/* Apagar */
+.msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+}
+
+.msg span {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  background: #151515;
+  color: #d5d5d5;
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 30px;
+  background-color: #151515;
+  width: 170px;
+  height: 40px;
+}

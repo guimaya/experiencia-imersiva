@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Experiência Imersiva - Bliss Lake</title>
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+  </head>
+  <body>
+    <div id="0" class="slide active">
+      <a href="iniciar" id="Link"> </a>
+      <video
+        id="button-0"
+        data-id="button-0"
+        class="button video active"
+        src="./src/assets/movies/inicio.mp4"
+        type="video/mp4"
+        muted
+        preload="auto"
+        loop
+        autoplay
+      ></video>
+    </div>
+
+    <div id="1" class="slide">
+      <video
+        id="iniciar"
+        data-id="button-1"
+        class="video"
+        src="./src/assets/movies/ROTEIRO_30_o_que_e_ser_bliss_lake.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+    </div>
+
+    <div id="2" class="slide">
+      <a href="curtir"> </a>
+      <a href="relaxar"> </a>
+      <video
+        id="button-1"
+        data-id="button-1"
+        class="button video"
+        src="./src/assets/buttons/menu_1_curtir-relaxar.mp4"
+        type="video/mp4"
+        muted
+        preload="auto"
+        loop
+      ></video>
+      <video
+        id="curtir"
+        data-id="button-2"
+        class="video"
+        src="./src/assets/movies/menu_1_curtir.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+      <video
+        id="relaxar"
+        data-id="button-3"
+        class="video"
+        src="./src/assets/movies/menu_1_relaxar.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+    </div>
+
+    <div id="3" class="slide">
+      <a href="descansar"> </a>
+      <a href="socializar"> </a>
+      <video
+        id="button-2"
+        data-id="button-2"
+        class="button video"
+        src="./src/assets/buttons/menu_2_descansar-socializar.mp4"
+        type="video/mp4"
+        muted
+        preload="auto"
+        loop
+      ></video>
+      <video
+        id="descansar"
+        data-id="button-4"
+        data-prev="button-2"
+        class="video"
+        src="./src/assets/movies/menu_2_descansar.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+      <video
+        id="socializar"
+        data-id="button-4"
+        data-prev="button-2"
+        class="video"
+        src="./src/assets/movies/menu_2_socializarr.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+    </div>
+
+    <div id="4" class="slide">
+      <a href="reconectar"> </a>
+      <a href="confraternizar"> </a>
+      <video
+        id="button-3"
+        data-id="button-3"
+        class="button video"
+        src="./src/assets/buttons/menu_3_reconectar-confraternizar.mp4"
+        type="video/mp4"
+        muted
+        preload="auto"
+        loop
+      ></video>
+      <video
+        id="confraternizar"
+        data-id="button-4"
+        data-prev="button-3"
+        class="video"
+        src="./src/assets/movies/menu_3_confraternizar.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+      <video
+        id="reconectar"
+        data-id="button-4"
+        data-prev="button-3"
+        class="video"
+        src="./src/assets/movies/menu_3_reconectar.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+    </div>
+
+    <div id="5" class="slide">
+      <a href="sim"> </a>
+      <a href="comcerteza"> </a>
+      <video
+        id="button-4"
+        data-id="button-4"
+        class="button video"
+        src="./src/assets/buttons/menu_4_sim-comcerteza.mp4"
+        type="video/mp4"
+        muted
+        preload="auto"
+        loop
+      ></video>
+      <video
+        id="sim"
+        data-id="button-5"
+        class="video"
+        src="./src/assets/movies/menu_4_sim.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+      <video
+        id="comcerteza"
+        data-id="button-5"
+        class="video"
+        src="./src/assets/movies/menu_4_comcerteza.mp4"
+        type="video/mp4"
+        preload="auto"
+      ></video>
+    </div>
+
+    <script src="./src/recognition.js"></script>
+  </body>
+</html>
